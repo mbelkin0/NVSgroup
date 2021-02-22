@@ -1,31 +1,28 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Ideas</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Picture</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @ideas.each do |idea| %>
-      <tr>
-        <td><%= idea.name %></td>
-        <td><%= idea.description %></td>
-        <td><%= image_tag idea.picture_url, width: '100%' if idea.picture.present? %>
-        <td><%= link_to 'Show', idea %></td>
-        <td><%= link_to 'Edit', edit_idea_path(idea) %></td>
-        <td><%= link_to 'Destroy', idea, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
+<h1>Welcome to GroupEats</h1>
+<h2>Recreating the Food Delivery World<h2>
+<h3>Food delivery has become one of the most convenient changes to our lives in the 21st Century. But as it has become more popular to get food delivery, companies have begun to increase delivery prices and fees.
+  Our food company will allow users to see what others in their area have ordered, and join other orders to reduce delivery costs. The company will also highlight a small number of companies per day with cost incentives to aggregate volume to reduce delivery costs. By doing so consumers will be able to reduce the cost of food delivery and companies will be able to drive volume and advertising for their restaurants. <h3>
 <br>
+<br>
+<h2>About Us<h2>
 
-<%= link_to 'New Idea', new_idea_path %>
+
+<h3> Mikhail Belkin<h3>
+<a href="https://lh3.googleusercontent.com/k06JqdoWify3QIqBX3np29TG-aygukC4HInfUQ306SODWb890bgC5n8j8jG5BvJM4N_Oc1c8dIDPNqnni1c0im9kHhVQdnwA9vD1TMWMASWr2wrri2PwMv-6FwbAdYyYX1laGyt8DiU=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/k06JqdoWify3QIqBX3np29TG-aygukC4HInfUQ306SODWb890bgC5n8j8jG5BvJM4N_Oc1c8dIDPNqnni1c0im9kHhVQdnwA9vD1TMWMASWr2wrri2PwMv-6FwbAdYyYX1laGyt8DiU=w207-h261-p-k" /> </a>
+  <h6> Mikhail is a first year Chicago Booth student with a BS in Chemical Engineering from the University of Minnesota. Prior to working at GroupEats, he was a product development engineer at 3M.
+
+<h3> Sabrina Mittal<h3>
+  <a href="https://lh3.googleusercontent.com/TkNXdCPK91RsG56Udg3m-yffn_ZF8bRpOPsKAFBMl2WV6soqERX8V4k1A95SqSj7gvCFJd9Kh_iHO5yQhufF49ikQ1564F5Q07jytJpocz-jNhTScHKcOBjICb-uTnSili5jsQMEmwA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/TkNXdCPK91RsG56Udg3m-yffn_ZF8bRpOPsKAFBMl2WV6soqERX8V4k1A95SqSj7gvCFJd9Kh_iHO5yQhufF49ikQ1564F5Q07jytJpocz-jNhTScHKcOBjICb-uTnSili5jsQMEmwA=w512-h315-p-k" /> </a>
+  <h6> Sabrina is a first year Chicago Booth student with a BS in Commerce (Finance and Business Analytics) from the University of Virginia. Prior to working at GroupEats, she was a federal sector consultant at IBM, mainly focusing on data analytics and strategic management work.
+
+<h3> Pallavi Bamzai<h3>
+  <a href="https://lh3.googleusercontent.com/aIFqf6S7e9GljLmvqx241syPmKJCsycSPPbShVpWsOSeV8QzE4E31lkljZwFkC1-0gn7Pb431TktBxYYcwXpqr5mNWhQRn0xdxshr0ccH2ZhcbeCrdUOUKOtKoFGwKK6nY3udbewkBU=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/aIFqf6S7e9GljLmvqx241syPmKJCsycSPPbShVpWsOSeV8QzE4E31lkljZwFkC1-0gn7Pb431TktBxYYcwXpqr5mNWhQRn0xdxshr0ccH2ZhcbeCrdUOUKOtKoFGwKK6nY3udbewkBU=w512-h315-p-k" /> </a>
+  <h6> Pallavi is a first year Chicago Booth student with a BA in Marketing from the University of Indiana. Prior to working at GroupEats, she was a marketing manager at Amazon.
+
+<h3> Katherine Zhang<h3>
+  <a href="https://lh3.googleusercontent.com/4O4DWtqhS3YXNU5aKOJDQ9Bmz1FI9e8wjVkEqRhUbIsb11UshiOdRXyE-0-bPS4Kr34qB2A-m0X0fh3093knAv7_kmXv8_tdWCqgFHioLqsT_W0_wbDusZMEhv_FvCfzU9qMupQ-Ggc=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/4O4DWtqhS3YXNU5aKOJDQ9Bmz1FI9e8wjVkEqRhUbIsb11UshiOdRXyE-0-bPS4Kr34qB2A-m0X0fh3093knAv7_kmXv8_tdWCqgFHioLqsT_W0_wbDusZMEhv_FvCfzU9qMupQ-Ggc=w512-h315-p-k" /> </a>
+  <h6> Katherine is a first year Chicago Booth student with a BS in Business Administration and a BA in Political Science from the University of California, Berkeley. Prior to working at GroupEats, she was at the Federal Reserve Bank of New York, running the FRB’s annual stress test on the banks in the Fed’s monitoring portfolio.
+
+<h3> Nathan Levy<h3>
+  <a href="https://lh3.googleusercontent.com/8aujbOOsLs_TuTBgYmxr-pS6I8ifM_W7h6DqN6xKU5dliQwUw5jt3pGhauSz4jXyvHQzWk2UKAVE5xjP34_5eEJmnJTwlN_sQe81i5g6rmanNZVFNdVRrI2AR2mq4p9bQfCNJEHke1c=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/8aujbOOsLs_TuTBgYmxr-pS6I8ifM_W7h6DqN6xKU5dliQwUw5jt3pGhauSz4jXyvHQzWk2UKAVE5xjP34_5eEJmnJTwlN_sQe81i5g6rmanNZVFNdVRrI2AR2mq4p9bQfCNJEHke1c=w512-h315-p-k" /> </a>
+  <h6> Nathan is a first year Chicago Booth student with a BA in Economics from the University of Virginia. Prior to working at GroupEats, he was a consultant at Accenture Federal Services.
